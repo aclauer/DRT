@@ -277,6 +277,7 @@ class Ray:
         assert(len(self.direction)==len(self.ray_ind))
 
     def select(self, mask):
+        mask = mask.to("cpu")
         return Ray(self.origin[mask],self.direction[mask],self.ray_ind[mask])
 
     def __len__(self):

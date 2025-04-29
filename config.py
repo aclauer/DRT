@@ -9,7 +9,7 @@ meshlabserver_cmd = "/home/andrew/Downloads/MeshLabServer2020.04-linux.AppImage"
 # meshlabserver_cmd = "DISPLAY=:0 " + meshlabserver_cmd
 
 # choose a directory to exchange temporary mesh file with meshlabserver
-tmp_path = "/dev/shm/DR/"
+tmp_path = "/home/andrew/dev/shm/DRT"
 
 # path to hdf5 file and visual hull mesh
 data_path = "/home/andrew/DRT/data/"
