@@ -1,10 +1,13 @@
 
 # ABSOLUTE path to your optix libary
-optix_include = "/root/workspace/docker/build/DR/NVIDIA-OptiX-SDK-6.5.0-linux64/include"
-optix_ld = "/root/workspace/docker/build/DR/NVIDIA-OptiX-SDK-6.5.0-linux64/lib64"
+# optix_include = "/root/workspace/docker/build/DR/NVIDIA-OptiX-SDK-6.5.0-linux64/include"
+# optix_ld = "/root/workspace/docker/build/DR/NVIDIA-OptiX-SDK-6.5.0-linux64/lib64"
+optix_include = "/home/andrew/Downloads/NVIDIA-OptiX-SDK-6.5.0-linux64/include"
+optix_ld = "/home/andrew/Downloads/NVIDIA-OptiX-SDK-6.5.0-linux64/lib64"
 
 # cmd to call meshlabserver
-meshlabserver_cmd = "DR/MeshLabServer2020.04-linux.AppImage"
+# meshlabserver_cmd = "DR/MeshLabServer2020.04-linux.AppImage"
+meshlabserver_cmd = "/home/andrew/Downloads/MeshLabServer2020.04-linux.AppImage"
 # if you are using a headless server, you may need to prepend `DISPLAY=:0`
 # meshlabserver_cmd = "DISPLAY=:0 " + meshlabserver_cmd
 
@@ -12,13 +15,15 @@ meshlabserver_cmd = "DR/MeshLabServer2020.04-linux.AppImage"
 tmp_path = "/dev/shm/DR/"
 
 # path to hdf5 file and visual hull mesh
-data_path = "./data/"
+# data_path = "./data/"
+data_path = "/home/andrew/DRT/data/"
+# data_path = "/home/andrew/Downloads/"
 result_path = "./result/"
 
 HyperParams = {
     # available model:
     # hand, mouse, monkey, horse, dog, rabbit, tiger, pig
-    'name' :  'pig',
+    'name' :  'hand',
     'IOR' : 1.4723,
     'Pass' : 20, # num of optimization stages
     'Iters' : 200, # in each stage

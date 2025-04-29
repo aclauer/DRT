@@ -2,7 +2,7 @@
 import torch
 from torch.utils.cpp_extension import load
 from config import optix_include, optix_ld
-optix = load(name="optix", sources=["./optix_extend.cpp"],
+optix = load(name="optix", sources=["/home/andrew/DRT/optix_extend.cpp"],
     extra_include_paths=[optix_include], extra_ldflags=["-L"+optix_ld, "-loptix_prime"])
 
 import trimesh
